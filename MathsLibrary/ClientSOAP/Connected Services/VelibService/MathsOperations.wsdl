@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VelibWS" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/MathsService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/MathsService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVelibWS_GetCities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCities" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_GetCities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_PickCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:PickCity" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_PickCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PickCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_DisplayStations_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayStations" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_DisplayStations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayStationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_GetStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStation" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_GetStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_ChangeCityTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeCityTime" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_ChangeCityTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeCityTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_ChangeStationTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeStationTime" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_ChangeStationTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeStationTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_ChangeDetailsTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeDetailsTime" />
+  </wsdl:message>
+  <wsdl:message name="IVelibWS_ChangeDetailsTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeDetailsTimeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVelibWS">
+    <wsdl:operation name="GetCities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/GetCities" message="tns:IVelibWS_GetCities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/GetCitiesResponse" message="tns:IVelibWS_GetCities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PickCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/PickCity" message="tns:IVelibWS_PickCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/PickCityResponse" message="tns:IVelibWS_PickCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayStations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/DisplayStations" message="tns:IVelibWS_DisplayStations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/DisplayStationsResponse" message="tns:IVelibWS_DisplayStations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/GetStation" message="tns:IVelibWS_GetStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/GetStationResponse" message="tns:IVelibWS_GetStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCityTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/ChangeCityTime" message="tns:IVelibWS_ChangeCityTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/ChangeCityTimeResponse" message="tns:IVelibWS_ChangeCityTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeStationTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/ChangeStationTime" message="tns:IVelibWS_ChangeStationTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/ChangeStationTimeResponse" message="tns:IVelibWS_ChangeStationTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeDetailsTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibWS/ChangeDetailsTime" message="tns:IVelibWS_ChangeDetailsTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibWS/ChangeDetailsTimeResponse" message="tns:IVelibWS_ChangeDetailsTime_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MathsOperations" type="tns:IVelibWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCities">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/GetCities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PickCity">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/PickCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayStations">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/DisplayStations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStation">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/GetStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCityTime">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/ChangeCityTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeStationTime">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/ChangeStationTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeDetailsTime">
+      <soap:operation soapAction="http://tempuri.org/IVelibWS/ChangeDetailsTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VelibWS">
+    <wsdl:port name="MathsOperations" binding="tns:MathsOperations">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/MathsService/maths" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
