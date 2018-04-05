@@ -104,32 +104,22 @@ namespace EventsClientWS
 
         static void Main(string[] args)
         {         
-            Console.WriteLine("Pour voir le guide, tapez \"help\", sinon appuyer sur une touche");
-            string resp;
-            if ((resp = Console.ReadLine()) != null)
-            {
-                if (resp == "help")
-                {
-                    help();
-                }
-            }
-
-            VelibWSCallBackSink objsink = new VelibWSCallBackSink();
+            Console.WriteLine("Entrez le nom d'une ville");
+            string city = Console.ReadLine();
+            Console.WriteLine("Entrez le nom d'une station");
+            string station = Console.ReadLine();
+            Console.WriteLine("Vous êtes abonné à la station "+ station + " à " + city);
+            Console.WriteLine("Attendez afin de recevoir des notifications");
+               
+             
+            VelibWSCallBackSink objsink = new VelibWSCallBackSink(city, station);
             InstanceContext iCntxt = new InstanceContext(objsink);
 
             VelibWS.VelibWSClient client = new VelibWS.VelibWSClient(iCntxt);
             client.SubscribeGetAvailableBikes();
             client.SubscribeGetAvailableBikesFinishedEvent();
-
-            Console.WriteLine("Voulez-vous voir la liste des villes disponibles? (O/N)");
-            if ((resp = Console.ReadLine()) != null)
-            {
-                if (resp == "O" || resp == "o")
-                {
-                    Console.WriteLine(client.GetCities());
-                }
-            }
-            processCity(client);
+            Console.ReadLine();
+       
 
         }
     }

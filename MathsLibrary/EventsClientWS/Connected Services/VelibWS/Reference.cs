@@ -74,7 +74,7 @@ namespace EventsClientWS.VelibWS {
     public interface IVelibWSCallback {
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IVelibWS/GetAvailableBikes")]
-        void GetAvailableBikes(string station, string res);
+        void GetAvailableBikes(string city, string station, string res);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IVelibWS/GetAvailableBikesFinished")]
         void GetAvailableBikesFinished();

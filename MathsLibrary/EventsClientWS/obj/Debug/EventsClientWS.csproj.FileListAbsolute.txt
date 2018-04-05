@@ -9,3 +9,4 @@ C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClient
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\MathsLibrary.pdb
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\Newtonsoft.Json.xml
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\obj\Debug\EventsClientWS.csproj.CopyComplete
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\obj\Debug\EventsClientWS.csprojResolveAssemblyReference.cache

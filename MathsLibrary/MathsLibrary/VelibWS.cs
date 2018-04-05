@@ -58,7 +58,7 @@ namespace MathsLibrary
 
     public class VelibWS : IVelibWS
     {
-        static Action<String, String> m_Event1 = delegate { };
+        static Action<String, String, String> m_Event1 = delegate { };
         static Action m_Event2 = delegate { };
 
         /* Private attributes */
@@ -159,11 +159,9 @@ namespace MathsLibrary
                 {
                     if (station.Name.ToLower().Contains(stationName.ToLower()))
                     {
-                        if (station.Name.ToLower().Contains("gare"))
-                        {
-                            m_Event1(stationName, station.ToString());
-                            m_Event2();
-                        }
+                        m_Event1(city, stationName, station.ToString());
+                        m_Event2();
+
                         return station.ToString();
                     }
                 }

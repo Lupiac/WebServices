@@ -10,7 +10,7 @@ namespace MathsLibrary
     public interface IVelibEvents
     {
         [OperationContract(IsOneWay = true)]
-        void GetAvailableBikes(String station, String res);
+        void GetAvailableBikes(String city, String station, String res);
 
         [OperationContract(IsOneWay = true)]
         void GetAvailableBikesFinished();
