@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using ClientSOAP.VelibService;
-
 
 namespace ClientSOAP
 {
@@ -119,7 +119,13 @@ namespace ClientSOAP
                 }
             }
 
-            VelibWSClient client = new VelibWSClient();
+            VelibWSCallBackSink objsink = new VelibWSCallBackSink();
+            InstanceContext iCntxt = new InstanceContext(objsink);
+
+            VelibWSClient client = new VelibWSClient(iCntxt);
+            client.SubscribeGetAvailableBikes();
+            client.SubscribeGetAvailableBikesFinishedEvent();
+
             Console.WriteLine("Voulez-vous voir la liste des villes disponibles? (O/N)");
             if ((resp = Console.ReadLine()) != null)
             {

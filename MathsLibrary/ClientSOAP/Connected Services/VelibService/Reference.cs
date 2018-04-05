@@ -12,7 +12,7 @@ namespace ClientSOAP.VelibService {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="VelibService.IVelibWS")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="VelibService.IVelibWS", CallbackContract=typeof(ClientSOAP.VelibService.IVelibWSCallback))]
     public interface IVelibWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/GetCities", ReplyAction="http://tempuri.org/IVelibWS/GetCitiesResponse")]
@@ -39,6 +39,18 @@ namespace ClientSOAP.VelibService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/GetStation", ReplyAction="http://tempuri.org/IVelibWS/GetStationResponse")]
         System.Threading.Tasks.Task<string> GetStationAsync(string stationName, string city);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikes", ReplyAction="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikesResponse")]
+        void SubscribeGetAvailableBikes();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikes", ReplyAction="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikesResponse")]
+        System.Threading.Tasks.Task SubscribeGetAvailableBikesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikesFinishedEvent", ReplyAction="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikesFinishedEventResponse")]
+        void SubscribeGetAvailableBikesFinishedEvent();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikesFinishedEvent", ReplyAction="http://tempuri.org/IVelibWS/SubscribeGetAvailableBikesFinishedEventResponse")]
+        System.Threading.Tasks.Task SubscribeGetAvailableBikesFinishedEventAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibWS/ChangeCityTime", ReplyAction="http://tempuri.org/IVelibWS/ChangeCityTimeResponse")]
         void ChangeCityTime(string time);
         
@@ -59,30 +71,41 @@ namespace ClientSOAP.VelibService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IVelibWSCallback {
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IVelibWS/GetAvailableBikes")]
+        void GetAvailableBikes(string station, string res);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IVelibWS/GetAvailableBikesFinished")]
+        void GetAvailableBikesFinished();
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IVelibWSChannel : ClientSOAP.VelibService.IVelibWS, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class VelibWSClient : System.ServiceModel.ClientBase<ClientSOAP.VelibService.IVelibWS>, ClientSOAP.VelibService.IVelibWS {
+    public partial class VelibWSClient : System.ServiceModel.DuplexClientBase<ClientSOAP.VelibService.IVelibWS>, ClientSOAP.VelibService.IVelibWS {
         
-        public VelibWSClient() {
+        public VelibWSClient(System.ServiceModel.InstanceContext callbackInstance) : 
+                base(callbackInstance) {
         }
         
-        public VelibWSClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
+        public VelibWSClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+                base(callbackInstance, endpointConfigurationName) {
         }
         
-        public VelibWSClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public VelibWSClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public VelibWSClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public VelibWSClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public VelibWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
+        public VelibWSClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, binding, remoteAddress) {
         }
         
         public string GetCities() {
@@ -115,6 +138,22 @@ namespace ClientSOAP.VelibService {
         
         public System.Threading.Tasks.Task<string> GetStationAsync(string stationName, string city) {
             return base.Channel.GetStationAsync(stationName, city);
+        }
+        
+        public void SubscribeGetAvailableBikes() {
+            base.Channel.SubscribeGetAvailableBikes();
+        }
+        
+        public System.Threading.Tasks.Task SubscribeGetAvailableBikesAsync() {
+            return base.Channel.SubscribeGetAvailableBikesAsync();
+        }
+        
+        public void SubscribeGetAvailableBikesFinishedEvent() {
+            base.Channel.SubscribeGetAvailableBikesFinishedEvent();
+        }
+        
+        public System.Threading.Tasks.Task SubscribeGetAvailableBikesFinishedEventAsync() {
+            return base.Channel.SubscribeGetAvailableBikesFinishedEventAsync();
         }
         
         public void ChangeCityTime(string time) {

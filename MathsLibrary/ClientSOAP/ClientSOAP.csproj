@@ -54,16 +54,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VelibWSCallBackSink.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\VelibService\item.xsd">
+    <None Include="Connected Services\VelibService\VelibWS.wsdl" />
+    <None Include="Connected Services\VelibService\VelibWS.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\VelibService\item1.xsd">
+    <None Include="Connected Services\VelibService\VelibWS1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\VelibService\MathsOperations.wsdl" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MathsLibrary\VelibService.csproj">
+      <Project>{77a09f2a-f5e9-46fa-9516-94ac92c55ae5}</Project>
+      <Name>VelibService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

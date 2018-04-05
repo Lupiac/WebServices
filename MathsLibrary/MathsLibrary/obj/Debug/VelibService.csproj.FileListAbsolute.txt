@@ -18,13 +18,12 @@ C:\Users\user\Documents\Polytech\WebServices\Rendu1\MathsLibrary\MathsLibrary\ob
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\MathsLibrary\MathsLibrary\obj\Debug\VelibService.csproj.CopyComplete
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.dll
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.pdb
-C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\bin\Debug\MathsLibrary.dll.config
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\bin\Debug\MathsLibrary.dll
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\bin\Debug\MathsLibrary.pdb
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\bin\Debug\Newtonsoft.Json.dll
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\bin\Debug\Newtonsoft.Json.xml
-C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\obj\Debug\VelibService.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\obj\Debug\VelibService.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\obj\Debug\VelibService.csproj.CopyComplete
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.dll
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\MathsLibrary\obj\Debug\VelibService.csprojResolveAssemblyReference.cache

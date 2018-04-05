@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MathsLibrary
 {
-    [ServiceContract]
+    [ServiceContract(CallbackContract = typeof(IVelibEvents))]
     public interface IVelibWS
     {
         /*  CLIENT METHODS  */
@@ -23,6 +23,12 @@ namespace MathsLibrary
 
         [OperationContract]
         string GetStation(string stationName, string city);
+
+        [OperationContract]
+        void SubscribeGetAvailableBikes();
+
+        [OperationContract]
+        void SubscribeGetAvailableBikesFinishedEvent();
 
         /*  ADMIN METHODS  */
 

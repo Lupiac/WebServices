@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Runtime.Caching;
 using System.Diagnostics;
-
+using System.ServiceModel;
 
 namespace MathsLibrary
 {
@@ -58,11 +58,15 @@ namespace MathsLibrary
 
     public class VelibWS : IVelibWS
     {
+        static Action<String, String> m_Event1 = delegate { };
+        static Action m_Event2 = delegate { };
+
         /* Private attributes */
         private string apiKey = "ecde85f2f7863fbb8fe33d3f57bc2c15dddc1584";
         private int CITY_TIME = 60 * 24 * 30;
         private int STATION_TIME = 2;
         private int DETAILS_TIME = 2;
+
         /* Private methods */
 
         public static T GetObjectFromCache<T>(string cacheItemName, int cacheTimeInMinutes, Func<string, T> objectSettingFunction, string funcParam)
@@ -155,6 +159,11 @@ namespace MathsLibrary
                 {
                     if (station.Name.ToLower().Contains(stationName.ToLower()))
                     {
+                        if (station.Name.ToLower().Contains("gare"))
+                        {
+                            m_Event1(stationName, station.ToString());
+                            m_Event2();
+                        }
                         return station.ToString();
                     }
                 }
@@ -190,6 +199,22 @@ namespace MathsLibrary
                 this.DETAILS_TIME = t;
                 Debug.WriteLine("DETAILS_TIME: " + DETAILS_TIME);
             }
+        }
+
+        public void SubscribeGetAvailableBikes()
+        {
+
+            IVelibEvents subscriber =
+            OperationContext.Current.GetCallbackChannel<IVelibEvents>();
+            m_Event1 += subscriber.GetAvailableBikes;
+        }
+    
+
+        public void SubscribeGetAvailableBikesFinishedEvent()
+        {
+            IVelibEvents subscriber =
+                        OperationContext.Current.GetCallbackChannel<IVelibEvents>();
+            m_Event2 += subscriber.GetAvailableBikesFinished;
         }
     }
 }

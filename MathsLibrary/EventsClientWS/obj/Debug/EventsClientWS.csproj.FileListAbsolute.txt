@@ -1,0 +1,11 @@
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\EventsClientWS.exe.config
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\EventsClientWS.exe
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\EventsClientWS.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\obj\Debug\EventsClientWS.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\obj\Debug\EventsClientWS.exe
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\obj\Debug\EventsClientWS.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\MathsLibrary.dll
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\MathsLibrary.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsClientWS\obj\Debug\EventsClientWS.csproj.CopyComplete

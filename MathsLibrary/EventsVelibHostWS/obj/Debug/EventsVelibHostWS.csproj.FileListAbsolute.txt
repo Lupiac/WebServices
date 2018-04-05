@@ -1,0 +1,12 @@
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\obj\Debug\EventsVelibHostWS.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\obj\Debug\EventsVelibHostWS.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\EventsVelibHostWS.exe.config
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\EventsVelibHostWS.exe
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\EventsVelibHostWS.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\MathsLibrary.dll
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\MathsLibrary.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\obj\Debug\EventsVelibHostWS.csproj.CopyComplete
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\obj\Debug\EventsVelibHostWS.exe
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\EventsVelibHostWS\obj\Debug\EventsVelibHostWS.pdb

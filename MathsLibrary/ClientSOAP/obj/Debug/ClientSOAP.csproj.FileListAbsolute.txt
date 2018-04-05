@@ -50,3 +50,6 @@ C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\o
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\obj\Debug\ClientSOAP.csproj.CopyComplete
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\obj\Debug\ClientSOAP.exe
 C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\obj\Debug\ClientSOAP.pdb
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\obj\Debug\ClientSOAP.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\bin\Debug\MathsLibrary.dll
+C:\Users\user\Documents\Polytech\WebServices\Rendu1\VF\MathsLibrary\ClientSOAP\bin\Debug\MathsLibrary.pdb

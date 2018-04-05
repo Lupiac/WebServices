@@ -19,12 +19,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MathsService/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://localhost:9011/VelibWS?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="a5c12a92-d4a6-48d5-81e5-54f97884d36e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MathsService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="39ab8dab-fa40-46b2-862d-f06e057bfdc3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MathsService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="71d3d8a2-afe2-42ab-a4cb-00e8de119be7" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MathsService/mex" />
+    <MetadataFile FileName="VelibWS.xsd" MetadataType="Schema" ID="77049881-9900-44ca-8698-0dbd54bd51f6" SourceId="1" SourceUrl="http://localhost:9011/VelibWS?xsd=xsd1" />
+    <MetadataFile FileName="VelibWS.wsdl" MetadataType="Wsdl" ID="6256f633-0ac7-4497-ad33-07e90b6cc2fc" SourceId="1" SourceUrl="http://localhost:9011/VelibWS?wsdl" />
+    <MetadataFile FileName="VelibWS1.xsd" MetadataType="Schema" ID="44df42c2-8252-46e7-9e16-db8bbc60acfb" SourceId="1" SourceUrl="http://localhost:9011/VelibWS?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

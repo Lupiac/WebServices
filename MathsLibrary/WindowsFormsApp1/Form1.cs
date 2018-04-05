@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -18,7 +19,13 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            this.client = new VelibWSClient();
+
+            VelibWSCallBackSink objsink = new VelibWSCallBackSink();
+            InstanceContext iCntxt = new InstanceContext(objsink);
+
+            this.client = new VelibWSClient(iCntxt);
+            client.SubscribeGetAvailableBikes();
+            client.SubscribeGetAvailableBikesFinishedEvent();
         }
 
         private async void Form1_Load(object sender, EventArgs e)
