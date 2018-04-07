@@ -103,7 +103,10 @@ namespace EventsClientWS
         }
 
         static void Main(string[] args)
-        {         
+        {
+            Console.WriteLine("Avec quelle précision temporelle voulez-vous être alerté(e)?");
+            string time = Console.ReadLine();
+
             Console.WriteLine("Entrez le nom d'une ville");
             string city = Console.ReadLine();
             Console.WriteLine("Entrez le nom d'une station");
@@ -116,6 +119,7 @@ namespace EventsClientWS
             InstanceContext iCntxt = new InstanceContext(objsink);
 
             VelibWS.VelibWSClient client = new VelibWS.VelibWSClient(iCntxt);
+            client.ChangeDetailsTime(time);
             client.SubscribeGetAvailableBikes();
             client.SubscribeGetAvailableBikesFinishedEvent();
             Console.ReadLine();

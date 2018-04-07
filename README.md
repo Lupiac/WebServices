@@ -9,6 +9,7 @@ Il est donc préférable de tester avec le GUI
 L'ensemble des informations de la station apparaissent sur la console du EventsClientWS
 Lorsqu'un autre utilisateur accède aux informations de la station à laquelle nous nous sommes abonnés, une notifications apparait avec les informations mises à jour sur la console EventsClientWS 
 
+Edit 07/04/18: On peut à présent choisir la période du cache
 ##Lancement du projet
 Lancer le projet EventsVelibHostWS
 Démarrer projet EventsClientWS pour sélectionner la ville et la station voulue
